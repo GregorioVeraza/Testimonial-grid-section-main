@@ -139,3 +139,62 @@ h3{
     grid-column: 2/4;
     background-color: hsl(219, 29%, 14%);
 }
+
+@media screen and (max-width: 375px){
+    body{
+        width: 100vw;
+        height: 200vh;
+        overflow: auto;
+        align-items: flex-start;
+    }
+
+    #svg{
+        visibility: hidden;
+    }
+
+    #container{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 80vw;
+        overflow: visible;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 2fr 2fr;
+        gap: 10px;
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "harmon"
+        "patrick"
+        "kira"
+        ;
+    }
+    #container-daniel-clifford{
+        grid-area: daniel;
+        grid-column: 1/-1;
+        overflow: visible;
+    }
+
+    #container-jonathan-walters{
+        grid-area: jonathan;
+        grid-column: 1/-1;
+        overflow: visible;
+    }
+
+    #container-jeanette-harmon{
+        grid-area: harmon;
+        grid-column: 1/-1;
+        overflow: visible;
+    }
+
+    #container-patrick-abrams{
+        grid-area: patrick;
+        grid-column: 1/-1;
+        overflow: visible;
+    }
+
+    #container-kira-witthle{
+        grid-area: kira;
+        grid-column: 1/-1;
+        overflow: visible;
+    }
+}
