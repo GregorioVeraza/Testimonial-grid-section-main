@@ -140,7 +140,7 @@ h3{
     background-color: hsl(219, 29%, 14%);
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 430px){
     body{
         width: 100vw;
         height: 200vh;
