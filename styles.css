@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap');
+body{
+    background-color: hsl(214, 17%, 92%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    place-content: center;
+    place-items: center;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h1{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0px;
+}
+p, h3{
+    font-size: 12,5px;
+    font-weight: lighter;
+}
+img{
+    border-radius: 100%;
+    height: fit-content;
+    width: 30px;
+    margin-right: 10px; 
+     
+}
+h2{
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h3{
+    margin: 0px;
+    margin-top: 5px;
+}
+
+#container{
+    width: 80vw;
+    height: 85vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr)) ;
+    gap: 20px;
+}
+
+
+.border-radius, .white-containers{
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(72, 85, 106, 0.15);
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    
+}
+
+.border-radius{
+    color: hsl(260, 100%, 95%);
+}
+
+.white-containers{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(224, 10%, 45%);
+}
+.white-containers h1{
+    color: hsl(217, 19%, 35%);
+}
+
+.flex-outside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flex-inside{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-inside h2{
+    font-size: 1em;
+}
+
+.flex-inside h3{
+    font-size: 0.75em;
+}
+.Clifford-color{
+    color: hsl(0, 0%, 81%);
+}
+
+#Clifford-border{
+    border: 2px solid hsl(264, 82%, 80%);
+}
+
+#patrick-border{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+#container-daniel-clifford{
+    grid-column: 1/3;
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+}
+
+#svg{
+    position: absolute;
+    border-radius: 0;
+    margin: 0px;
+    height: 150px;
+    opacity: 50%;
+    width: auto;
+    right: 10%;
+    top: 0px;
+}
+
+#container-jonathan-walters{
+    grid-column: 3/4;
+    background-color: hsl(217, 19%, 35%);
+}
+
+#container-kira-witthle{
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+}
+
+#container-jeanette-harmon{
+    grid-column: 1/2;
+}
+
+#container-patrick-abrams{
+    grid-column: 2/4;
+    background-color: hsl(219, 29%, 14%);
+}
